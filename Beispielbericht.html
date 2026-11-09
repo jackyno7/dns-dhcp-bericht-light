@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html><html lang='de'><head><meta charset='utf-8'><title>DNS- und DHCP-Bericht Light lab.test</title><style>body{font-family:Segoe UI,Arial,sans-serif;color:#2b2f36;margin:0;background:#f4f6fa}
+.seite{max-width:1100px;margin:0 auto;padding:28px 24px 60px}
+h1{color:#1f5fae;margin:0 0 4px;font-size:28px} h2{color:#1f5fae;font-size:19px;margin:34px 0 10px;border-bottom:2px solid #d0d5dd;padding-bottom:6px}
+.meta{color:#6b7280;font-size:13px;margin-bottom:22px}
+.kacheln{display:flex;gap:14px;flex-wrap:wrap;margin:18px 0}
+.kachel{flex:1;min-width:150px;background:#fff;border-radius:10px;padding:14px 18px;border-left:8px solid #999;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.kachel b{display:block;font-size:30px} .kachel span{font-size:13px;color:#6b7280}
+table{border-collapse:collapse;width:100%;background:#fff;font-size:13px;margin:8px 0 4px}
+th{background:#1f5fae;color:#fff;text-align:left;padding:7px 9px;font-weight:600} td{padding:6px 9px;border-bottom:1px solid #e5e7eb;vertical-align:top;overflow-wrap:break-word}
+tr:nth-child(even) td{background:#f9fafb}
+.marke{display:inline-block;min-width:58px;text-align:center;padding:2px 9px;border-radius:11px;color:#fff;font-size:12px;font-weight:600}
+.m-Hoch{background:#d92d20}.m-Mittel{background:#f79009}.m-Niedrig{background:#ca8a04}.m-OK{background:#12b76a}.m-Info{background:#1f5fae}
+.befund{background:#fff;border-radius:10px;padding:16px 20px;margin:14px 0;border-left:8px solid #999;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.befund h3{margin:0 0 6px;font-size:16px} .befund p{margin:5px 0;font-size:14px;line-height:1.45} .befund .emp{color:#14532d}
+.Hoch{border-color:#d92d20}.Mittel{border-color:#f79009}.Niedrig{border-color:#eab308}.OK{border-color:#12b76a}.Info{border-color:#1f5fae}
+.klein{color:#6b7280;font-size:12px} a{color:#1f5fae;text-decoration:none}
+pre{background:#fff;border:1px solid #d0d5dd;border-radius:8px;padding:12px 14px;font-size:12px;white-space:pre-wrap;word-break:break-word}
+.fuss{margin-top:40px;color:#6b7280;font-size:12px;border-top:1px solid #d0d5dd;padding-top:12px}
+@media print{body{background:#fff}.befund,.kachel{box-shadow:none;border:1px solid #d0d5dd;border-left-width:8px;break-inside:avoid}}</style></head><body><div class='seite'><h1>DNS- und DHCP-Bericht Light</h1><div class='meta'>Dom&#228;ne <b>lab.test</b> · erstellt am 09.11.2026 19:38 von LAB\Administrator auf LABDC01</div><div class='kacheln'><div class='kachel Hoch'><b>1</b><span>Befunde mit hoher Priorität</span></div><div class='kachel Mittel'><b>1</b><span>mit mittlerer Priorität</span></div><div class='kachel Niedrig'><b>0</b><span>mit niedriger Priorität</span></div><div class='kachel Info'><b>0</b><span>Hinweise und nicht geprüft</span></div><div class='kachel OK'><b>3</b><span>Prüfpunkte ohne Befund</span></div></div><h2>Umgebung</h2><table><tr><th>Eigenschaft</th><th>Wert</th></tr><tr><td>Dom&#228;ne (NetBIOS)</td><td>lab.test (LAB)</td></tr><tr><td>Gepr&#252;fte DNS-Server</td><td>LABDC01, LABDC02</td></tr><tr><td>Gepr&#252;fte DHCP-Server</td><td>keine im Active Directory autorisiert</td></tr><tr><td>Schwellen dieses Berichts</td><td>DNS-Eintr&#228;ge veraltet ab 60 Tagen, DHCP-Auslastung ab 80 %</td></tr></table><h2>Übersicht der Prüfpunkte</h2><table><tr><th>Nr.</th><th>Bereich</th><th>Prüfpunkt</th><th>Treffer</th><th>Bewertung</th></tr><tr><td>N1</td><td>DNS</td><td><a href='#N1'>DNS-Server nicht abfragbar</a></td><td>0</td><td><span class='marke m-OK'>OK</span></td></tr><tr><td>N3</td><td>DNS</td><td><a href='#N3'>Zonen ohne Alterung</a></td><td>2</td><td><span class='marke m-Mittel'>Mittel</span></td></tr><tr><td>N5</td><td>DNS</td><td><a href='#N5'>Zonen mit unsicheren dynamischen Updates</a></td><td>0</td><td><span class='marke m-OK'>OK</span></td></tr><tr><td>H1</td><td>DHCP</td><td><a href='#H1'>DHCP-Server nicht abfragbar</a></td><td>1</td><td><span class='marke m-Hoch'>Hoch</span></td></tr><tr><td>H2</td><td>DHCP</td><td><a href='#H2'>Bereiche mit mindestens 80 % Auslastung</a></td><td>0</td><td><span class='marke m-OK'>OK</span></td></tr></table><h2>DNS-Server</h2><table>
+<colgroup><col/><col/><col/><col/><col/></colgroup>
+<tr><th>Server</th><th>Zonen</th><th>Aufräumen</th><th>Letzter Aufräumlauf</th><th>Weiterleitungen</th></tr>
+<tr><td>LABDC01</td><td>2</td><td>Nein</td><td>nie</td><td>keine (Stammhinweise)</td></tr>
+<tr><td>LABDC02</td><td>2</td><td>Nein</td><td>nie</td><td>10.99.0.10</td></tr>
+</table><h2>DNS-Zonen</h2><table>
+<colgroup><col/><col/><col/><col/><col/><col/></colgroup>
+<tr><th>Zone</th><th>Typ</th><th>Im AD gespeichert</th><th>Dynamische Updates</th><th>Zonenübertragung</th><th>Gelesen von</th></tr>
+<tr><td>_msdcs.lab.test</td><td>Primary</td><td>Ja</td><td>Secure</td><td>NoTransfer</td><td>LABDC01</td></tr>
+<tr><td>lab.test</td><td>Primary</td><td>Ja</td><td>Secure</td><td>NoTransfer</td><td>LABDC01</td></tr>
+</table><h2>DHCP-Server</h2><p class='klein'>Keine Einträge.</p><h2>DHCP-Bereiche</h2><p class='klein'>Keine Einträge.</p><h2>Befunde</h2><div class='befund Hoch' id='H1'><h3><span class='marke m-Hoch'>Hoch</span> H1 · DHCP-Server nicht abfragbar <span class='klein'>(1 Treffer)</span></h3><p>Der Server ist im Active Directory als DHCP-Server autorisiert, l&#228;sst sich aber nicht abfragen. F&#252;r ihn wurde nichts gepr&#252;ft. Ist kein Windows-DHCP-Server autorisiert (DHCP l&#228;uft z. B. auf Router oder Firewall), bleibt der DHCP-Teil leer.</p><p class='emp'><b>Empfehlung:</b> Pr&#252;fen, ob der Server l&#228;uft und das Konto DHCP verwalten darf. Existiert der Server nicht mehr, die Autorisierung im Active Directory entfernen.</p><table>
+<colgroup><col/><col/><col/></colgroup>
+<tr><th>Server</th><th>Feststellung</th><th>Details</th></tr>
+<tr><td>LABDC01</td><td>Modul &quot;DhcpServer&quot; fehlt - DHCP nicht gepr&#252;ft</td><td>Auf einem DHCP-Server starten oder RSAT-DHCP installieren (oder -OhneDhcp angeben)</td></tr>
+</table></div><div class='befund Mittel' id='N3'><h3><span class='marke m-Mittel'>Mittel</span> N3 · Zonen ohne Alterung <span class='klein'>(2 Treffer)</span></h3><p>Das Aufr&#228;umen wirkt nur in Zonen, in denen die Alterung eingeschaltet ist. Gepr&#252;ft werden Zonen mit dynamischen Updates.</p><p class='emp'><b>Empfehlung:</b> In den Eigenschaften der Zone unter &quot;Alterung&quot; das Aufr&#228;umen veralteter Eintr&#228;ge aktivieren (Standardwerte: 7 Tage + 7 Tage).</p><table>
+<colgroup><col/><col/><col/></colgroup>
+<tr><th>Server</th><th>Feststellung</th><th>Details</th></tr>
+<tr><td>LABDC01</td><td>Zone _msdcs.lab.test: Alterung ausgeschaltet</td><td>Veraltete dynamische Eintr&#228;ge werden nie entfernt</td></tr>
+<tr><td>LABDC01</td><td>Zone lab.test: Alterung ausgeschaltet</td><td>Veraltete dynamische Eintr&#228;ge werden nie entfernt</td></tr>
+</table></div><h2>Ohne Befund</h2><table><tr><th>Nr.</th><th>Prüfpunkt</th></tr><tr id='N1'><td>N1</td><td>DNS-Server nicht abfragbar</td></tr><tr id='N5'><td>N5</td><td>Zonen mit unsicheren dynamischen Updates</td></tr><tr id='H2'><td>H2</td><td>Bereiche mit mindestens 80 % Auslastung</td></tr></table><div class='fuss'>DNS- und DHCP-Bericht Light Version 1.0 · IT Admin Tools by MM · Das Skript hat ausschließlich gelesen und nichts verändert. Light-Version mit 5 von 21 Pr&#252;fpunkten der Vollversion (https://mueller86.gumroad.com/l/sthgh). Der Bericht zeigt Auff&#228;lligkeiten anhand fester Regeln zum Zeitpunkt des Laufs; er ersetzt keine laufende &#220;berwachung und erhebt keinen Anspruch auf Vollst&#228;ndigkeit. Dieser Bericht enth&#228;lt Servernamen und Adressen - bitte vertraulich behandeln.</div></div></body></html>
