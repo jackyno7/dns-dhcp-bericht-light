@@ -10,7 +10,7 @@
 
 .DESCRIPTION
     The script operates exclusively READ-ONLY. It does not change zones, entries, scopes, or settings,
-    deletes nothing, and transfers no data. It writes exactly one HTML file (and CSV files if desired)
+    deletes nothing, and sends no data to third parties or the internet. It writes exactly one HTML file (and CSV files if desired)
     to the specified output folder.
 
     Prerequisites: Windows PowerShell 5.1, the modules "ActiveDirectory", "DnsServer", and "DhcpServer"
@@ -20,7 +20,7 @@
 
     Deutsch:
     Das Skript arbeitet ausschließlich LESEND. Es ändert keine Zonen, Einträge, Bereiche oder Einstellungen,
-    löscht nichts und überträgt keine Daten. Es schreibt genau eine HTML-Datei (und auf Wunsch CSV-Dateien)
+    löscht nichts und sendet keine Daten an Dritte oder ins Internet. Es schreibt genau eine HTML-Datei (und auf Wunsch CSV-Dateien)
     in den angegebenen Ausgabeordner.
 
     Voraussetzungen: Windows PowerShell 5.1, die Module "ActiveDirectory", "DnsServer" und "DhcpServer"
